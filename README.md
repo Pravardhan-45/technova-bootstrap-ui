@@ -11,11 +11,6 @@ TechNova is a polished, responsive multi-page UI built with **Bootstrap 5**, cre
  ├── animations.css  
 /js  
  └── script.js  
-/images  
- ├── hero.jpg  
- ├── service1.jpg  
- ├── service2.jpg  
- ├── service3.jpg  
 index.html  
 services.html  
 contact.html  
@@ -69,3 +64,4 @@ Then go to **Settings → Pages → Source → main branch → Save**.
 Built for a stipend-based internship to demonstrate Bootstrap, design systems, and responsive UI development.
 
 > _Responsive multi-page UI built with Bootstrap 5 — combining creativity, accessibility, and performance._
+
