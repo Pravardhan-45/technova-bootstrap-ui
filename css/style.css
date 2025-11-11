@@ -1,0 +1,76 @@
+/* style.css - custom theme + layout tweaks */
+
+:root{
+  --primary: #3b82f6; /* blue */
+  --muted: #6b7280;
+  --radius: 1rem;
+}
+
+/* Spacing to account for fixed-top navbar */
+.mt-navbar {
+  padding-top: 80px;
+}
+
+/* HERO */
+.hero{
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.hero::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45));
+}
+.hero .container { position: relative; z-index: 2; }
+
+/* Cards */
+.feature-card, .service-card, .service-detailed {
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.feature-card:hover, .service-card:hover, .service-detailed:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(2,6,23,0.12);
+}
+
+/* Card images */
+.service-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg,var(--primary), #2563eb);
+  border: none;
+}
+
+/* Utilities */
+.text-primary { color: var(--primary) !important; }
+
+/* Footer spacing */
+footer { border-top: 1px solid rgba(255,255,255,0.03); }
+
+/* Minimal responsive tweaks */
+@media (max-width: 767px) {
+  .hero { min-height: 55vh; padding: 4rem 0; }
+  .service-card img { height: 140px; }
+}
+.service-card img {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(105%) saturate(110%);
+}

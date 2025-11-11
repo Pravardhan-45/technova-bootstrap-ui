@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — TechNova</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="index.html">TechNova</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContact" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContact">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="mt-navbar">
+    <section class="py-6 text-white" style="background-image:url('images/contact-bg.jpg'); background-size:cover; background-position:center;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card bg-dark bg-opacity-75 border-0 shadow-lg">
+              <div class="card-body p-4">
+                <h2 class="fw-bold mb-3">Let's talk about your project</h2>
+                <p class="text-muted mb-4">Fill in the details and we will reach out within 24 hours.</p>
+
+                <!-- Contact form (client-side only) -->
+                <form id="contactForm" class="needs-validation" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="name" class="form-label">Full name</label>
+                      <input id="name" type="text" class="form-control" required>
+                      <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">Email</label>
+                      <input id="email" type="email" class="form-control" required>
+                      <div class="invalid-feedback">Please enter a valid email.</div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="company" class="form-label">Company (optional)</label>
+                      <input id="company" type="text" class="form-control">
+                    </div>
+
+                    <div class="col-12">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea id="message" rows="5" class="form-control" required></textarea>
+                      <div class="invalid-feedback">Tell us about your project.</div>
+                    </div>
+
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+
+                <div class="mt-4 text-center text-muted small">
+                  Or email us directly at <a href="mailto:hello@technova.example" class="link-light">hello@technova.example</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <h5 class="fw-bold mb-3">Office</h5>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="mb-1"><strong>Address:</strong> 123 Startup Lane, Cityname</p>
+            <p class="mb-1"><strong>Phone:</strong> +91 12345 67890</p>
+            <p class="mb-1"><strong>Email:</strong> hello@technova.example</p>
+          </div>
+          <div class="col-md-6">
+            <!-- Placeholder map iframe — replace src with a real embed if required -->
+            <div class="ratio ratio-16x9 rounded shadow-sm">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.228578057083!2d-122.41941508468274!3d37.77492977975983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c2f7aefb1%3A0xe4d3cf7ff1c77617!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sin!4v1698888888888!5m2!1sen!2sin"
+    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-0">© <span id="year3"></span> TechNova</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TechNova — Modern Bootstrap UI</title>
+  <meta name="description" content="TechNova — a modern responsive UI built with Bootstrap 5 showcasing professional design and performance.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="index.html">TechNova</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-2">
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#quoteModal">Get Quote</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero d-flex align-items-center text-white text-center" 
+          style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=2000&q=80'); background-size:cover; background-position:center;">
+    <div class="container py-6">
+      <h1 class="display-4 fw-bold mb-3 animate-slide-up">Empowering Digital Innovation</h1>
+      <p class="lead mb-4 animate-fade-in">Building visually stunning and performance-focused web experiences using Bootstrap 5.</p>
+      <div class="d-flex justify-content-center gap-2">
+        <a href="services.html" class="btn btn-primary btn-lg shadow">Explore More</a>
+        <a href="contact.html" class="btn btn-outline-light btn-lg shadow">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Why Choose TechNova?</h2>
+      <p class="text-muted text-center mb-5">A blend of creativity, code quality, and responsiveness — crafted with modern UI principles.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card feature-card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Responsive by Default</h5>
+              <p class="card-text text-muted">Every layout adapts seamlessly to all devices using Bootstrap’s flexible grid system.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Polished UI Design</h5>
+              <p class="card-text text-muted">Consistent spacing, elegant typography, and refined visual hierarchy throughout.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Performance & Accessibility</h5>
+              <p class="card-text text-muted">Lightweight, semantic, and keyboard-accessible components for all users.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS (new section replacing courses/services) -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Our Expertise</h2>
+      <p class="text-muted mb-5">What makes TechNova stand out — a passion for crafting quality user experiences with precision and flair.</p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-3">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <div class="text-primary fs-2 mb-3"><i data-lucide="layout-dashboard"></i></div>
+            <h5 class="fw-bold mb-2">Modern Web Design</h5>
+            <p class="text-muted small">We create clean, minimal, and effective web layouts that blend design and function.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <div class="text-primary fs-2 mb-3"><i data-lucide="pen-tool"></i></div>
+            <h5 class="fw-bold mb-2">Brand Identity</h5>
+            <p class="text-muted small">Helping products tell a compelling visual story through logo, color, and interaction design.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <div class="text-primary fs-2 mb-3"><i data-lucide="code-xml"></i></div>
+            <h5 class="fw-bold mb-2">UI Components</h5>
+            <p class="text-muted small">Building reusable, scalable interface systems that make development faster and cleaner.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <div class="text-primary fs-2 mb-3"><i data-lucide="zap"></i></div>
+            <h5 class="fw-bold mb-2">Creative Motion</h5>
+            <p class="text-muted small">Subtle transitions and motion that bring life to interfaces without overwhelming the user.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h4 class="fw-bold mb-3">Ready to elevate your next project?</h4>
+      <p class="text-muted mb-3">Let’s collaborate to build something exceptional. Get a free quote within 24 hours.</p>
+      <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#quoteModal">Request Quote</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1">© <span id="year"></span> TechNova — Built with Bootstrap 5</p>
+      <small class="text-muted">Designed to demonstrate polished UI skills for internship evaluation.</small>
+    </div>
+  </footer>
+
+  <!-- QUOTE MODAL -->
+  <div class="modal fade" id="quoteModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Request a Quote</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="quoteForm" class="needs-validation" novalidate>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="qName" class="form-label">Name</label>
+              <input id="qName" type="text" class="form-control" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="mb-3">
+              <label for="qEmail" class="form-label">Email</label>
+              <input id="qEmail" type="email" class="form-control" required>
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="mb-3">
+              <label for="qDetails" class="form-label">Project Details</label>
+              <textarea id="qDetails" class="form-control" rows="3" required></textarea>
+              <div class="invalid-feedback">Please provide brief details about your project.</div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary w-100">Send Request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
